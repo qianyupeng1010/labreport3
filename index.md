@@ -52,9 +52,9 @@ well as data compiled by the Red Iberoamericana de Indicadores de Ciencia y Tecn
 (RICYT), 
 ```
 This command deleted one blank line and leave more space to display more contents.<br>
-
+[website cited](https://phoenixnap.com/kb/less-command-in-linux)
 ### Option 2: `less -M`
-When the user is reading a file using the "less" command with the "-M" option, the "-M" option instructs the "less" program to display more verbose and detailed prompts than the default "more" program. Additionally, it also enables the display of reading statistics such as the current line number and the percentage of content that has been read.
+When the user is reading a file using the "less" command with the "-M" option, it also enables the display of reading statistics such as the current line number and the percentage of content that has been read.
 **First Example:**<br>
 If we put `less -M technical/plos/journal.pbio.0020001.txt` in terminal, it will show in terminal:
 ```
@@ -99,8 +99,66 @@ ht 77, bound for Los Angeles. Within the next 20
  
  Here the command 'less -M' provide us the information:`cal Hcal/911report/chapter-1.txt lines 37-38/731 4%` It shows we have read 4% of the text.<br>
 This command is useful because it could tell us how many percent of the content we have read.
- 
- 
+[website cited](https://phoenixnap.com/kb/less-command-in-linux)
+
+### Option 3: `less -N`
+'less -N' will display the line numbers at the beginning of each line.
+**First Example:**<br>
+If we put 'less -N technical/911report/chapter-2.txt' into the command, it will give us the output like this:
+
+```
+      1 
+      2     
+      3         
+      4             THE FOUNDATION OF THE NEW TERRORISM
+      5             A DECLARATION OF WAR
+      6             In February 1998, the 40-year-old Saudi exile Usama Bin Ladin and a fugitive Egyptian
+      7                 physician, Ayman al Zawahiri, arranged from their Afghan headquarters for an Arabic
+      8                 newspaper in London to publish what they termed a fatwa issued in the name of a
+      9                 "World Islamic Front." A fatwa is normally an interpretation of Islamic law by a
+     10                 respected Islamic authority, but neither Bin Ladin, Zawahiri, nor the three others
+     11                 who signed this statement were scholars of Islamic law. Claiming that America had
+      ...
+    941 minded these bombings, Bin
+    942                 Ladin said that the World Islamic Front for jihad against "Jews and Crusaders" had
+    943                 issued a "crystal clear" fatwa. If the instigation for jihad against the Jews and
+    944                 the Americans to liberate the holy places "is considered a crime,"he said,"let
+    945                 history be a witness that I am a criminal."
+    946             
+    947         
+    948     
+~
+~
+~
+(END)
+```
+**Second Example:**
+If we put 'less -N technical/911report/chapter-3.txt' into the command, it will give us the output like this:
+ ```
+      1 
+      2     
+      3         
+      4             COUNTERTERRORISM EVOLVES
+      5             In chapter 2, we described the growth of a new kind of terrorism, and a new terrorist
+      6                 organization-especially from 1988 to 1998, when Usama Bin Ladin declared war and
+      7                 organized the bombing of two U.S. embassies. In this chapter, we trace the parallel
+      8                 evolution of government efforts to counter terrorism by Islamic extremists against
+      9                 the United States.
+      ...
+   3150                 into Afghanistan, perhaps as part of a team joined to a deployment of the CIA's own
+   3151                 officers, would have required a major policy initiative (probably combined with
+   3152                 efforts to secure the support of at least one or two neighboring countries) to make
+   3153                 a long-term commitment, establish a durable presence on the ground, and be prepared
+   3154                 to accept the associated risks and costs. Such a military plan was never developed
+   3155                 for interagency consideration before 9/11. As 1999 came to a close, the CIA had a
+   3156                 new strategic plan in place for capturing Bin Ladin, but no option was rated as
+   3157                 having more than a 15 percent chance of achieving that objective.
+   3158         
+   3159     
+(END)
+```
+This command is useful because it can help us identify which line we are reading and give us a easier reference to contents in a specific line.
+[website cited](https://phoenixnap.com/kb/less-command-in-linux)
 
 
 
