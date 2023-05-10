@@ -52,7 +52,7 @@ well as data compiled by the Red Iberoamericana de Indicadores de Ciencia y Tecn
 (RICYT), 
 ```
 This command deleted one blank line and leave more space to display more contents.<br>
-[Website Cited](https://phoenixnap.com/kb/less-command-in-linux)
+[Website Cited.](https://phoenixnap.com/kb/less-command-in-linux)
 ### Option 2: `less -M`
 When the user is reading a file using the `less`command with the `-M` option, it also enables the display of reading statistics such as the current line number and the percentage of content that has been read.<br>
 **First Example:**<br>
@@ -99,7 +99,7 @@ ht 77, bound for Los Angeles. Within the next 20
  
  Here the command `less -M` provide us the information:`cal Hcal/911report/chapter-1.txt lines 37-38/731 4%` It shows we have read 4% of the text.<br>
 This command is useful because it could tell us how many percent of the content we have read.
-[website Cited](https://phoenixnap.com/kb/less-command-in-linux)
+[Website Cited.](https://phoenixnap.com/kb/less-command-in-linux)
 
 ### Option 3: `less -N`
 `less -N` will display the line numbers at the beginning of each line.<br>
@@ -158,10 +158,10 @@ If we put `less -N technical/911report/chapter-3.txt` into the command, it will 
 (END)
 ```
 This command is useful because it can help us identify which line we are reading and give us a easier reference to contents in a specific line.
-[website Cited](https://phoenixnap.com/kb/less-command-in-linux)
+[Website Cited.](https://phoenixnap.com/kb/less-command-in-linux)
 
 
-### Option 3: `less -p[pattern]`
+### Option 4: `less -p[pattern]`
 `less -p[pattern]` will highlight the search pattern in the output and find the first occurrence of the specified pattern in the input file.<br>
 **First Example:**
 If we put `less -pnational technical/911report/chapter-6.txt`, it will give us the output like this:<br>
@@ -169,13 +169,18 @@ If we put `less -pnational technical/911report/chapter-6.txt`, it will give us t
 <img width="753" alt="截屏2023-05-10 下午3 49 01" src="https://github.com/qianyupeng1010/labreport3/assets/130001791/96fd0910-eecc-44af-b29e-103334ba0990">
 
 `less -pnational` highlighted the word `national` in the text.
+<br>
 **Second Example:**
 If we put `less -pspotted technical/911report/chapter-7.txt`, it will give us the output like this:<br>
 
 <img width="739" alt="截屏2023-05-10 下午3 51 07" src="https://github.com/qianyupeng1010/labreport3/assets/130001791/f4d35a7e-18f6-492c-9dbf-7367105976f7">
-`less -pspotted`highlighted the word `spotted` in the text.
+
+<br>
+
+Here command `less -pspotted` highlighted the word `spotted` in the text.
 This command is useful because if we want to find keyword in a text, this command could do what we want.
-[Website Cited](https://phoenixnap.com/kb/less-command-in-linux)
+
+[Website Cited.](https://phoenixnap.com/kb/less-command-in-linux)
 
 
 
