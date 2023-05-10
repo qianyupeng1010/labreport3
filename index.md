@@ -1,7 +1,7 @@
 # Lab Report 3
 ## `less`command
 ### Option 1: `less -s`
-`less -s` combines successive blank lines into one blank line.
+`less -s` combines successive blank lines into one blank line.<br>
 **First Example:**<br>
 if we put `less technical/biomed/1468-6708-3-3.txt` into the terminal, part of the output would be:<br>
 ```
@@ -15,7 +15,7 @@ myocardial infarction and randomized them to 16 weeks of
 atorvastatin 80 mg or placebo once daily [ 5 ] .
 ```
 
-but if we put 'less -s technical/biomed/1468-6708-3-3.txt` into the terminal, this part of the output would be:<br>
+but if we put `less -s technical/biomed/1468-6708-3-3.txt` into the terminal, this part of the output would be:<br>
 ```
 The Myocardial Ischemia Reduction with Aggressive Cholesterol Lowering (MIRACL) trial set out to answer this question.
 
@@ -27,7 +27,7 @@ atorvastatin 80 mg or placebo once daily [ 5 ] .
 ```
 This command is useful because if provide more space for more contents.<br>
 **Second Example:**<br>
-if we put 'less technical/plos/journal.pbio.0020001.txt`in to the terminal, part of the output would be:<br>
+if we put `less technical/plos/journal.pbio.0020001.txt`in to the terminal, part of the output would be:<br>
 ```
 much higher percentage than the increments reached by Europe (10%) and industrial Asia
 (26%). The percentage of global scientific publications from North America actually
@@ -40,7 +40,7 @@ well as data compiled by the Red Iberoamericana de Indicadores de Ciencia y Tecn
 (RICYT), 
 ```
 
-but if we put 'less -s technical/plos/journal.pbio.0020001.txt`in to the terminal, this part of the output would be:<br>
+but if we put `less -s technical/plos/journal.pbio.0020001.txt`in to the terminal, this part of the output would be:<br>
 ```
 much higher percentage than the increments reached by Europe (10%) and industrial Asia
 (26%). The percentage of global scientific publications from North America actually
@@ -52,9 +52,9 @@ well as data compiled by the Red Iberoamericana de Indicadores de Ciencia y Tecn
 (RICYT), 
 ```
 This command deleted one blank line and leave more space to display more contents.<br>
-[website cited](https://phoenixnap.com/kb/less-command-in-linux)
+[Website Cited](https://phoenixnap.com/kb/less-command-in-linux)
 ### Option 2: `less -M`
-When the user is reading a file using the "less" command with the "-M" option, it also enables the display of reading statistics such as the current line number and the percentage of content that has been read.
+When the user is reading a file using the `less`command with the `-M` option, it also enables the display of reading statistics such as the current line number and the percentage of content that has been read.<br>
 **First Example:**<br>
 If we put `less -M technical/plos/journal.pbio.0020001.txt` in terminal, it will show in terminal:
 ```
@@ -81,7 +81,7 @@ een developed and developing
 `less -M` provided us the information `distributiontechnical/plos/journal.pbio.0020001.txt lines 6-11/231 3%` This shows we have read 3% of the text<br>
 **Second Example:**
 <br>
-If we put `less -M technical/911report/chapter-1.txt' into terminal, we will get
+If we put `less -M technical/911report/chapter-1.txt` into terminal, we will get
 
 ```
 Washington Dulles: American 77. Hundreds of 
@@ -97,14 +97,14 @@ ht 77, bound for Los Angeles. Within the next 20
  cal Hcal/911report/chapter-1.txt lines 37-38/731 4%
  ```
  
- Here the command 'less -M' provide us the information:`cal Hcal/911report/chapter-1.txt lines 37-38/731 4%` It shows we have read 4% of the text.<br>
+ Here the command `less -M` provide us the information:`cal Hcal/911report/chapter-1.txt lines 37-38/731 4%` It shows we have read 4% of the text.<br>
 This command is useful because it could tell us how many percent of the content we have read.
-[website cited](https://phoenixnap.com/kb/less-command-in-linux)
+[website Cited](https://phoenixnap.com/kb/less-command-in-linux)
 
 ### Option 3: `less -N`
-'less -N' will display the line numbers at the beginning of each line.
+`less -N` will display the line numbers at the beginning of each line.<br>
 **First Example:**<br>
-If we put 'less -N technical/911report/chapter-2.txt' into the command, it will give us the output like this:
+If we put `less -N technical/911report/chapter-2.txt` into the command, it will give us the output like this:
 
 ```
       1 
@@ -133,7 +133,7 @@ If we put 'less -N technical/911report/chapter-2.txt' into the command, it will 
 (END)
 ```
 **Second Example:**
-If we put 'less -N technical/911report/chapter-3.txt' into the command, it will give us the output like this:
+If we put `less -N technical/911report/chapter-3.txt` into the command, it will give us the output like this:
  ```
       1 
       2     
@@ -158,8 +158,24 @@ If we put 'less -N technical/911report/chapter-3.txt' into the command, it will 
 (END)
 ```
 This command is useful because it can help us identify which line we are reading and give us a easier reference to contents in a specific line.
-[website cited](https://phoenixnap.com/kb/less-command-in-linux)
+[website Cited](https://phoenixnap.com/kb/less-command-in-linux)
 
+
+### Option 3: `less -p[pattern]`
+`less -p[pattern]` will highlight the search pattern in the output and find the first occurrence of the specified pattern in the input file.<br>
+**First Example:**
+If we put `less -pnational technical/911report/chapter-6.txt`, it will give us the output like this:<br>
+
+<img width="753" alt="截屏2023-05-10 下午3 49 01" src="https://github.com/qianyupeng1010/labreport3/assets/130001791/96fd0910-eecc-44af-b29e-103334ba0990">
+
+`less -pnational` highlighted the word `national` in the text.
+**Second Example:**
+If we put `less -pspotted technical/911report/chapter-7.txt`, it will give us the output like this:<br>
+
+<img width="739" alt="截屏2023-05-10 下午3 51 07" src="https://github.com/qianyupeng1010/labreport3/assets/130001791/f4d35a7e-18f6-492c-9dbf-7367105976f7">
+`less -pspotted`highlighted the word `spotted` in the text.
+This command is useful because if we want to find keyword in a text, this command could do what we want.
+[Website Cited](https://phoenixnap.com/kb/less-command-in-linux)
 
 
 
