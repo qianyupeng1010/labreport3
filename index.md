@@ -54,7 +54,7 @@ well as data compiled by the Red Iberoamericana de Indicadores de Ciencia y Tecn
 This command deleted one blank line and leave more space to display more contents.<br>
 [Website Cited.](https://phoenixnap.com/kb/less-command-in-linux)
 ### Option 2: `less -M`
-When the user is reading a file using the `less`command with the `-M` option, it also enables the display of reading statistics such as the current line number and the percentage of content that has been read.<br>
+When the user is reading a file using the `less`command with the `-M` option, it enables the display of reading statistics such as the current line number and the percentage of content that has been read.<br>
 **First Example:**<br>
 If we put `less -M technical/plos/journal.pbio.0020001.txt` in terminal, it will show in terminal:
 ```
